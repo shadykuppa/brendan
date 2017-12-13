@@ -3,6 +3,7 @@ body {
 	height:100vh;
 	width:100vw;
 	display:block;
+	margin:0;
 }
 .top{
 	height:10%;
@@ -26,7 +27,7 @@ body {
 }
 .type{
 	height:100%;
-	width:22.5%;
+	width:25%;
 }
 .bottom_selection{
 	height:100%;
@@ -43,6 +44,11 @@ body {
 	height:48%;
 	width:100%;
 	background-color:purple;
+	flex-wrap:flex;
+}
+.half_box{
+	height:100%;
+	Width:50%;
 }
 .monster{
 	height:20%;
@@ -57,9 +63,39 @@ body {
 	height:4%;
 	width:100%;
 }
-.space2{
-	height:100%;
-	width:2%;
-	background-color:red;
+@media screen and (max-width: 700px){
+
+	body {
+		display:block;
+	} 
+	.bottom{
+		height:90%;
+		width:100%;
+		display:block;
+		background-color:blue;
+	}
+	.bottom_selection{
+		height:15%;
+		width:100%;
+		display:flex;
+		flex-wrap:flex;
+		background-color:red;
+	}
+	.info{
+		height:85%;
+		width:100%;
+		display:block;
+	}
+	.space{
+		height:100%;
+		width:5%;
+	}
+	.monster{
+		height:100%;
+		width:100%;
+		background-color:orange;
+	}
+	#space_1{
+		display:none;
+	}
 }
-	
